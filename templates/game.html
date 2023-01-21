@@ -10,11 +10,11 @@
     <p>Guess a number by clicking a link</p>
     {% for number in range(1, 100) %} 
     {% if random_number == number %}
-    <li><a href="game/{{ number }}">{{ number }}</a></li>
+    <li><a href="guess/{{ number }}">{{ number }}</a></li>
     {% elif number < random_number %}
-    <li><a href="game/{{ number }}">{{ number }}</a></li>
+    <li><a href="guess/{{ number }}">{{ number }}</a></li>
     {% elif number > random_number %}
-    <li><a href="game/{{ number }}">{{ number }}</a></li>
+    <li><a href="guess/{{ number }}">{{ number }}</a></li>
     {% endif %} {% endfor %}
   </body>
 </html>

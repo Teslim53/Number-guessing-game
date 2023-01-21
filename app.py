@@ -18,7 +18,7 @@ def game_first():
     return render_template("game.html", random_number=random_number)
 
 # Compare number chosen by user to random number and return appropriate page
-@app.route("/game/<int:number_chosen>", methods=['GET'])
+@app.route("/guess/<int:number_chosen>", methods=['GET'])
 def game(number_chosen):
     if number_chosen < random_number:
         return render_template("low.html", number_chosen=number_chosen)
